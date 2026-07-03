@@ -1,1 +1,966 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <title>Julia Giovanuci | Nutricionista e Modelo Comercial</title>
+  <meta name="description" content="Julia Giovanuci é nutricionista CRN5 24266 e modelo comercial em Luís Eduardo Magalhães - BA. Acompanhamento nutricional presencial e on-line, provadores, campanhas e conteúdo para marcas." />
+  <meta name="author" content="Julia Giovanuci" />
+  <meta name="robots" content="index, follow" />
+
+  <meta property="og:title" content="Julia Giovanuci | Nutricionista e Modelo Comercial" />
+  <meta property="og:description" content="Nutrição consciente, imagem elegante e vida com mais leveza." />
+  <meta property="og:type" content="website" />
+
+  <style>
+    :root {
+      --offwhite: #f7f2ea;
+      --ivory: #fffaf2;
+      --paper: rgba(255, 250, 242, 0.88);
+      --deep-green: #1e3a2d;
+      --green-2: #2d5140;
+      --gold: #c79b45;
+      --gold-soft: #ead5a8;
+      --text: #243029;
+      --muted: #6d746d;
+      --line: rgba(30, 58, 45, 0.14);
+      --shadow: 0 22px 55px rgba(30, 58, 45, 0.13);
+      --radius-xl: 34px;
+      --radius-lg: 24px;
+      --radius-md: 18px;
+      --max: 920px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      min-height: 100vh;
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(199, 155, 69, 0.18), transparent 32%),
+        radial-gradient(circle at 95% 10%, rgba(30, 58, 45, 0.13), transparent 30%),
+        radial-gradient(circle at bottom right, rgba(199, 155, 69, 0.13), transparent 32%),
+        var(--offwhite);
+      line-height: 1.55;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .page {
+      width: 100%;
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 22px 16px 46px;
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 0 18px;
+    }
+
+    .brand-logo {
+      width: min(310px, 76vw);
+      height: auto;
+      filter: drop-shadow(0 8px 14px rgba(30, 58, 45, 0.08));
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-xl);
+      background:
+        linear-gradient(135deg, rgba(255, 250, 242, 0.92), rgba(247, 242, 234, 0.78)),
+        var(--paper);
+      box-shadow: var(--shadow);
+    }
+
+    .hero-inner {
+      display: grid;
+      gap: 0;
+    }
+
+    .hero-media {
+      position: relative;
+      min-height: 360px;
+      background:
+        linear-gradient(180deg, rgba(30, 58, 45, 0.03), rgba(30, 58, 45, 0.16));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px 24px 0;
+    }
+
+    .portrait-wrap {
+      position: relative;
+      width: min(360px, 84vw);
+      aspect-ratio: 1 / 1;
+      border-radius: 999px;
+      padding: 8px;
+      background: linear-gradient(145deg, var(--gold), rgba(199, 155, 69, 0.18), var(--deep-green));
+      box-shadow: 0 24px 52px rgba(30, 58, 45, 0.18);
+    }
+
+    .portrait {
+      width: 100%;
+      height: 100%;
+      border-radius: 999px;
+      object-fit: cover;
+      border: 8px solid var(--ivory);
+    }
+
+    .hero-content {
+      padding: 28px 22px 26px;
+      text-align: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 14px;
+      padding: 7px 13px;
+      border-radius: 999px;
+      background: rgba(30, 58, 45, 0.08);
+      color: var(--deep-green);
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.11em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(2.3rem, 8vw, 4.8rem);
+      line-height: 0.98;
+      letter-spacing: -0.04em;
+      color: var(--deep-green);
+      margin-bottom: 12px;
+    }
+
+    .role {
+      font-size: 1rem;
+      color: var(--muted);
+      margin-bottom: 8px;
+      font-weight: 700;
+    }
+
+    .crn {
+      color: var(--deep-green);
+      font-size: 0.92rem;
+      margin-bottom: 18px;
+      font-weight: 600;
+    }
+
+    .headline {
+      font-family: Georgia, "Times New Roman", serif;
+      max-width: 650px;
+      margin: 0 auto 12px;
+      color: var(--text);
+      font-size: clamp(1.35rem, 4.6vw, 2.1rem);
+      line-height: 1.14;
+    }
+
+    .subheadline {
+      max-width: 650px;
+      margin: 0 auto;
+      color: var(--muted);
+      font-size: 0.98rem;
+    }
+
+    .actions {
+      display: grid;
+      gap: 11px;
+      margin-top: 22px;
+    }
+
+    .button {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      width: 100%;
+      min-height: 64px;
+      border-radius: 18px;
+      padding: 15px 16px;
+      border: 1px solid transparent;
+      text-align: left;
+      transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease, background 0.18s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 26px rgba(30, 58, 45, 0.13);
+    }
+
+    .button strong {
+      display: block;
+      font-size: 0.98rem;
+      line-height: 1.18;
+    }
+
+    .button small {
+      display: block;
+      margin-top: 3px;
+      font-size: 0.78rem;
+      line-height: 1.25;
+      opacity: 0.86;
+      font-weight: 400;
+    }
+
+    .button-primary {
+      background: var(--deep-green);
+      color: var(--ivory);
+    }
+
+    .button-primary:hover {
+      background: var(--green-2);
+    }
+
+    .button-gold {
+      background: linear-gradient(135deg, var(--gold), #ddb868);
+      color: #1e271f;
+    }
+
+    .button-light {
+      background: rgba(255, 250, 242, 0.84);
+      border-color: var(--line);
+      color: var(--text);
+    }
+
+    .button-soft {
+      background: rgba(30, 58, 45, 0.06);
+      border-color: rgba(30, 58, 45, 0.10);
+      color: var(--deep-green);
+    }
+
+    .arrow {
+      flex: 0 0 auto;
+      width: 32px;
+      height: 32px;
+      border-radius: 999px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255, 250, 242, 0.28);
+      font-size: 1rem;
+      font-weight: 700;
+    }
+
+    .button-light .arrow,
+    .button-soft .arrow {
+      background: rgba(30, 58, 45, 0.08);
+      color: var(--deep-green);
+    }
+
+    .section {
+      margin-top: 16px;
+      padding: 22px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      background: var(--paper);
+      box-shadow: 0 14px 34px rgba(30, 58, 45, 0.07);
+      backdrop-filter: blur(10px);
+    }
+
+    .section-header {
+      margin-bottom: 15px;
+    }
+
+    .kicker {
+      display: block;
+      color: var(--gold);
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+    }
+
+    h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--deep-green);
+      font-size: clamp(1.45rem, 5vw, 2rem);
+      line-height: 1.12;
+      margin-bottom: 6px;
+    }
+
+    .section p {
+      color: var(--muted);
+      font-size: 0.96rem;
+    }
+
+    .split {
+      display: grid;
+      gap: 12px;
+    }
+
+    .card {
+      padding: 17px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-md);
+      background: rgba(255, 250, 242, 0.82);
+    }
+
+    .card strong {
+      display: block;
+      color: var(--deep-green);
+      margin-bottom: 5px;
+      font-size: 1rem;
+    }
+
+    .card span,
+    .card p {
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .service-list {
+      display: grid;
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .service {
+      display: flex;
+      gap: 12px;
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: rgba(255, 250, 242, 0.82);
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .dot {
+      width: 9px;
+      height: 9px;
+      margin-top: 8px;
+      border-radius: 999px;
+      background: var(--gold);
+      box-shadow: 0 0 0 5px rgba(199, 155, 69, 0.13);
+      flex: 0 0 auto;
+    }
+
+    .service b {
+      color: var(--text);
+    }
+
+    .metrics {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .metric {
+      padding: 16px 12px;
+      border-radius: 18px;
+      border: 1px solid var(--line);
+      background: linear-gradient(145deg, rgba(255, 250, 242, 0.86), rgba(30, 58, 45, 0.035));
+      text-align: center;
+    }
+
+    .metric b {
+      display: block;
+      color: var(--deep-green);
+      font-size: 1.32rem;
+      line-height: 1;
+      margin-bottom: 5px;
+      font-family: Georgia, "Times New Roman", serif;
+    }
+
+    .metric span {
+      display: block;
+      color: var(--muted);
+      font-size: 0.78rem;
+      line-height: 1.22;
+    }
+
+    .about {
+      display: grid;
+      gap: 16px;
+      align-items: center;
+    }
+
+    .about-image {
+      overflow: hidden;
+      border-radius: 24px;
+      border: 1px solid var(--line);
+      min-height: 300px;
+      background: var(--ivory);
+    }
+
+    .about-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .bio-list {
+      display: grid;
+      gap: 9px;
+      margin-top: 14px;
+    }
+
+    .bio-list div {
+      padding: 11px 12px;
+      border-radius: 14px;
+      background: rgba(30, 58, 45, 0.055);
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .bio-list b {
+      color: var(--deep-green);
+    }
+
+    .contact-grid {
+      display: grid;
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .contact-card {
+      padding: 15px;
+      border-radius: 16px;
+      border: 1px solid var(--line);
+      background: rgba(255, 250, 242, 0.82);
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .contact-card b {
+      display: block;
+      color: var(--deep-green);
+      margin-bottom: 3px;
+    }
+
+    .note {
+      margin-top: 14px;
+      padding-top: 14px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+
+    .footer {
+      padding: 20px 6px 0;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+
+    .footer-logo {
+      width: min(220px, 62vw);
+      margin: 0 auto 10px;
+      opacity: 0.88;
+    }
+
+    @media (min-width: 760px) {
+      .page {
+        padding-top: 28px;
+      }
+
+      .hero-inner {
+        grid-template-columns: 0.9fr 1.1fr;
+        align-items: stretch;
+      }
+
+      .hero-media {
+        min-height: auto;
+        padding: 34px 0 34px 26px;
+      }
+
+      .portrait-wrap {
+        width: min(330px, 34vw);
+      }
+
+      .hero-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+        padding: 42px 34px 42px 20px;
+      }
+
+      .headline,
+      .subheadline {
+        margin-left: 0;
+        margin-right: 0;
+      }
+
+      .actions {
+        grid-template-columns: 1fr;
+      }
+
+      .split {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .metrics {
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+      .about {
+        grid-template-columns: 0.82fr 1.18fr;
+      }
+
+      .contact-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .contact-card.full {
+        grid-column: 1 / -1;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Julia Giovanuci",
+    "jobTitle": "Nutricionista e Modelo Comercial",
+    "email": "mailto:giovanucijulia@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Luís Eduardo Magalhães",
+      "addressRegion": "BA",
+      "addressCountry": "BR"
+    },
+    "sameAs": [
+      "https://www.instagram.com/juliagiovanuci",
+      "https://www.tiktok.com/@julia.giovanuci"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <main class="page">
+    <header class="topbar" aria-label="Marca">
+      <img class="brand-logo" src="assets/logo-julia-giovanuci.png" alt="Julia Giovanuci" />
+    </header>
+
+    <section class="hero" aria-labelledby="titulo-principal">
+      <div class="hero-inner">
+        <div class="hero-media">
+          <div class="portrait-wrap">
+            <img class="portrait" src="assets/foto-profissional-nutricionista.jpeg" alt="Retrato profissional de Julia Giovanuci" />
+          </div>
+        </div>
+
+        <div class="hero-content">
+          <span class="eyebrow">Nutrição • Modelo comercial • Imagem</span>
+
+          <h1 id="titulo-principal">Julia Giovanuci</h1>
+
+          <p class="role">Nutricionista e modelo comercial</p>
+          <p class="crn">CRN5 24266 | Luís Eduardo Magalhães - BA | Presencial e on-line</p>
+
+          <p class="headline">Nutrição consciente. Imagem elegante. Vida com mais leveza.</p>
+
+          <p class="subheadline">
+            Acompanhamento nutricional para mulheres que desejam mais consciência alimentar
+            e conteúdo comercial para marcas que valorizam estética, confiança e autoridade.
+          </p>
+
+          <div class="actions" aria-label="Ações principais">
+            <a class="button button-primary" href="https://wa.me/557736283016?text=Ol%C3%A1%2C%20Julia.%20Gostaria%20de%20agendar%20um%20acompanhamento%20nutricional." target="_blank" rel="noopener">
+              <span>
+                <strong>Agendar acompanhamento nutricional</strong>
+                <small>Presencial em LEM-BA ou on-line</small>
+              </span>
+              <span class="arrow">→</span>
+            </a>
+
+            <a class="button button-gold" href="https://wa.me/5577999711033?text=Ol%C3%A1%2C%20Julia.%20Gostaria%20de%20solicitar%20uma%20proposta%20comercial%20para%20parceria%2C%20publi%2C%20provador%20ou%20campanha." target="_blank" rel="noopener">
+              <span>
+                <strong>Solicitar proposta comercial</strong>
+                <small>Campanhas, provadores, UGC e modelo</small>
+              </span>
+              <span class="arrow">→</span>
+            </a>
+
+            <a class="button button-light" href="#trabalho">
+              <span>
+                <strong>Conhecer meu trabalho</strong>
+                <small>Nutrição, imagem, métricas e contato</small>
+              </span>
+              <span class="arrow">↓</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="trabalho">
+      <div class="section-header">
+        <span class="kicker">Escolha seu caminho</span>
+        <h2>Uma página para pacientes e marcas entenderem rapidamente como trabalhar comigo.</h2>
+        <p>
+          A atuação da Julia é organizada em duas frentes complementares:
+          acompanhamento nutricional e imagem comercial para marcas.
+        </p>
+      </div>
+
+      <div class="split">
+        <article class="card">
+          <strong>Para pacientes</strong>
+          <span>
+            Acompanhamento nutricional para mulheres que estão cansadas de dietas extremas,
+            confusão alimentar e tentativas sem continuidade.
+          </span>
+        </article>
+
+        <article class="card">
+          <strong>Para marcas</strong>
+          <span>
+            Modelo comercial, provadores, campanhas e conteúdo para empresas que desejam
+            comunicar seus produtos com estética, agilidade e credibilidade.
+          </span>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="nutricao">
+      <div class="section-header">
+        <span class="kicker">Nutrição</span>
+        <h2>Acompanhamento nutricional com escuta, consciência e vida real.</h2>
+        <p>
+          Para mulheres que desejam construir uma relação mais leve com a alimentação,
+          com orientação individualizada e sem promessas milagrosas.
+        </p>
+      </div>
+
+      <div class="service-list">
+        <div class="service">
+          <span class="dot"></span>
+          <span>
+            <b>Psiconutrição e nutrição clínica</b><br />
+            Atendimento voltado à consciência alimentar, rotina possível, clareza nas escolhas
+            e relação mais equilibrada com a comida.
+          </span>
+        </div>
+
+        <div class="service">
+          <span class="dot"></span>
+          <span>
+            <b>Avaliação individualizada</b><br />
+            Questionário pré-consulta, bioimpedância, antropometria, avaliação global,
+            análise de exames e inspeção clínica quando aplicável.
+          </span>
+        </div>
+
+        <div class="service">
+          <span class="dot"></span>
+          <span>
+            <b>Plano alimentar e acompanhamento</b><br />
+            Plano entregue na consulta, acompanhamento por WhatsApp durante o período contratado
+            e consulta com duração aproximada de 120 minutos.
+          </span>
+        </div>
+
+        <div class="service">
+          <span class="dot"></span>
+          <span>
+            <b>Atendimento presencial e on-line</b><br />
+            Presencial em Luís Eduardo Magalhães - BA e on-line para Brasil e exterior.
+          </span>
+        </div>
+      </div>
+
+      <div class="actions">
+        <a class="button button-primary" href="https://wa.me/557736283016?text=Ol%C3%A1%2C%20Julia.%20Gostaria%20de%20agendar%20um%20acompanhamento%20nutricional." target="_blank" rel="noopener">
+          <span>
+            <strong>Quero agendar meu acompanhamento</strong>
+            <small>Fale pelo WhatsApp de atendimento</small>
+          </span>
+          <span class="arrow">→</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="section" id="marcas">
+      <div class="section-header">
+        <span class="kicker">Imagem e marcas</span>
+        <h2>Modelo comercial e conteúdo para marcas que buscam elegância e autoridade.</h2>
+        <p>
+          Para lojas, clínicas, studios, marcas de beleza, moda, saúde, experiências,
+          cosméticos e empresas que desejam comunicar valor com estética limpa e presença profissional.
+        </p>
+      </div>
+
+      <div class="service-list">
+        <div class="service">
+          <span class="dot"></span>
+          <span>
+            <b>Provador para lojas</b><br />
+            Apresentação de peças, looks e composições com imagem sofisticada,
+            naturalidade e comunicação alinhada à marca.
+          </span>
+        </div>
+
+        <div class="service">
+          <span class="dot"></span>
+          <span>
+            <b>Campanhas e publicidade</b><br />
+            Stories patrocinados, reels, post no feed, presença em eventos,
+            cobertura comercial e conteúdo mensal.
+          </span>
+        </div>
+
+        <div class="service">
+          <span class="dot"></span>
+          <span>
+            <b>UGC e modelo comercial</b><br />
+            Conteúdos que podem ser usados pela marca em seus próprios canais,
+            além de ensaios e campanhas como modelo.
+          </span>
+        </div>
+
+        <div class="service">
+          <span class="dot"></span>
+          <span>
+            <b>Cosméticos, beleza e make</b><br />
+            Atuação como modelo para maquiagem, cosméticos, estética, cabelo,
+            moda feminina, wellness e experiências.
+          </span>
+        </div>
+      </div>
+
+      <div class="actions">
+        <a class="button button-gold" href="https://wa.me/5577999711033?text=Ol%C3%A1%2C%20Julia.%20Gostaria%20de%20solicitar%20uma%20proposta%20comercial%20para%20parceria%2C%20publi%2C%20provador%20ou%20campanha." target="_blank" rel="noopener">
+          <span>
+            <strong>Solicitar proposta comercial</strong>
+            <small>Valores e formatos enviados sob demanda</small>
+          </span>
+          <span class="arrow">→</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="section" id="metricas">
+      <div class="section-header">
+        <span class="kicker">Presença digital</span>
+        <h2>Métricas principais</h2>
+        <p>
+          Dados de audiência do perfil principal, úteis para marcas, campanhas e parcerias.
+        </p>
+      </div>
+
+      <div class="metrics">
+        <div class="metric">
+          <b>8.332</b>
+          <span>seguidores</span>
+        </div>
+
+        <div class="metric">
+          <b>241,6K</b>
+          <span>alcance médio mensal</span>
+        </div>
+
+        <div class="metric">
+          <b>3.236</b>
+          <span>visualizações médias nos stories</span>
+        </div>
+
+        <div class="metric">
+          <b>3.487</b>
+          <span>visualizações médias nos reels</span>
+        </div>
+
+        <div class="metric">
+          <b>88,5%</b>
+          <span>público feminino</span>
+        </div>
+
+        <div class="metric">
+          <b>25–34</b>
+          <span>faixa etária principal</span>
+        </div>
+
+        <div class="metric">
+          <b>LEM</b>
+          <span>cidade principal</span>
+        </div>
+
+        <div class="metric">
+          <b>SP • GO • RJ</b>
+          <span>também alcança</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="sobre">
+      <div class="about">
+        <div class="about-image">
+          <img src="assets/foto-profissional-nutricionista.jpeg" alt="Foto profissional de Julia Giovanuci" />
+        </div>
+
+        <div>
+          <div class="section-header">
+            <span class="kicker">Sobre</span>
+            <h2>Uma atuação que une saúde, imagem e verdade.</h2>
+            <p>
+              Sou Julia Giovanuci, nutricionista formada pela Pontifícia Universidade Católica de Goiás,
+              com atuação em Psiconutrição e Nutrição Clínica, e modelo comercial.
+            </p>
+          </div>
+
+          <p>
+            Acredito em uma nutrição que olha para a pessoa antes de olhar para calorias.
+            Meu trabalho busca consciência, harmonia e leveza na relação com a alimentação,
+            o corpo e a rotina. Como modelo comercial, represento marcas que valorizam estética,
+            qualidade, confiança e posicionamento.
+          </p>
+
+          <div class="bio-list">
+            <div><b>Formação:</b> Nutrição — PUC Goiás, 2020</div>
+            <div><b>Registro:</b> CRN5 24266</div>
+            <div><b>Atuação:</b> Psiconutrição, Nutrição Clínica e Modelo Comercial</div>
+            <div><b>Experiência:</b> workshops, entrevistas, palestras e campanhas comerciais</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="produtos">
+      <div class="section-header">
+        <span class="kicker">Em breve</span>
+        <h2>Produtos digitais</h2>
+        <p>
+          Guias, conteúdos e materiais para quem deseja organizar a alimentação,
+          comer melhor sem extremos e construir uma rotina mais consciente.
+        </p>
+      </div>
+
+      <div class="split">
+        <article class="card">
+          <strong>Temas previstos</strong>
+          <span>
+            Organização alimentar, planejamento semanal, alimentação sem extremos,
+            beleza, saúde e composição corporal.
+          </span>
+        </article>
+
+        <article class="card">
+          <strong>Para quem será</strong>
+          <span>
+            Pacientes, seguidoras e mulheres que desejam começar a cuidar da alimentação
+            com mais clareza e autonomia.
+          </span>
+        </article>
+      </div>
+
+      <div class="actions">
+        <a class="button button-soft" href="https://wa.me/557736283016?text=Ol%C3%A1%2C%20Julia.%20Gostaria%20de%20saber%20mais%20sobre%20os%20produtos%20digitais%20quando%20estiverem%20dispon%C3%ADveis." target="_blank" rel="noopener">
+          <span>
+            <strong>Quero saber quando estiver disponível</strong>
+            <small>Receba informações sobre os próximos materiais</small>
+          </span>
+          <span class="arrow">→</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="section" id="links">
+      <div class="section-header">
+        <span class="kicker">Redes</span>
+        <h2>Acompanhe o conteúdo</h2>
+        <p>
+          Conteúdos sobre nutrição, moda, provadores, beleza, autocuidado e vida real.
+        </p>
+      </div>
+
+      <div class="actions">
+        <a class="button button-light" href="https://www.instagram.com/juliagiovanuci" target="_blank" rel="noopener">
+          <span>
+            <strong>Instagram principal</strong>
+            <small>@juliagiovanuci</small>
+          </span>
+          <span class="arrow">→</span>
+        </a>
+
+        <a class="button button-light" href="https://www.tiktok.com/@julia.giovanuci" target="_blank" rel="noopener">
+          <span>
+            <strong>TikTok</strong>
+            <small>@julia.giovanuci</small>
+          </span>
+          <span class="arrow">→</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="section" id="contato">
+      <div class="section-header">
+        <span class="kicker">Contato</span>
+        <h2>Fale com a Julia</h2>
+        <p>
+          Use o canal correto para agilizar o atendimento.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <a class="contact-card" href="https://wa.me/557736283016?text=Ol%C3%A1%2C%20Julia.%20Gostaria%20de%20agendar%20um%20acompanhamento%20nutricional." target="_blank" rel="noopener">
+          <b>Pacientes</b>
+          WhatsApp: 77 3628-3016
+        </a>
+
+        <a class="contact-card" href="https://wa.me/5577999711033?text=Ol%C3%A1%2C%20Julia.%20Gostaria%20de%20solicitar%20uma%20proposta%20comercial%20para%20parceria%2C%20publi%2C%20provador%20ou%20campanha." target="_blank" rel="noopener">
+          <b>Marcas e parcerias</b>
+          WhatsApp: 77 99971-1033
+        </a>
+
+        <a class="contact-card" href="mailto:giovanucijulia@gmail.com">
+          <b>E-mail</b>
+          giovanucijulia@gmail.com
+        </a>
+
+        <a class="contact-card" href="https://www.google.com/maps/search/?api=1&query=Avenida%20Tancredo%20Neves%2C%202173%2C%20Jardim%20Para%C3%ADso%20I%2C%20Lu%C3%ADs%20Eduardo%20Magalh%C3%A3es%20-%20BA%2C%2047850-000%2C%20Brasil" target="_blank" rel="noopener">
+          <b>Localização</b>
+          Avenida Tancredo Neves, 2173, Jardim Paraíso I, Luís Eduardo Magalhães - BA
+        </a>
+
+        <div class="contact-card full">
+          <b>Atendimento</b>
+          Presencial em Luís Eduardo Magalhães - BA e on-line para Brasil e exterior.
+          Horário habitual: 8h às 12h e 14h às 18h, com possibilidade de agendamento especial.
+        </div>
+      </div>
+
+      <p class="note">
+        Informações, disponibilidade, formatos comerciais e condições de atendimento devem ser confirmados diretamente pelos canais oficiais.
+        Valores comerciais são enviados sob proposta.
+      </p>
+    </section>
+
+    <footer class="footer">
+      <img class="footer-logo" src="assets/logo-julia-giovanuci.png" alt="Julia Giovanuci" />
+      <p>Nutrição consciente. Imagem elegante. Vida com mais leveza.</p>
+      <p>© Julia Giovanuci — Nutricionista CRN5 24266 e modelo comercial.</p>
+    </footer>
+  </main>
+</body>
+</html>
